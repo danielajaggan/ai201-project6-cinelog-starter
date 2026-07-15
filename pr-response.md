@@ -2,6 +2,11 @@
 
 ## AI Usage
 <!-- Fill in at the end — how you used AI tools during this project -->
+**Codebase orientation:** I gave Claude the contents of `collection_service.py` and asked it to summarize what each function does and what patterns it follows. This helped me understand the `verb_to_noun` naming convention and the deduplication pattern before implementing Comment 2.
+
+**Stress-testing Comment 4 (default visibility):** After drafting my position on `public=True`, I asked Claude "what counterargument would a careful code reviewer raise against this?" It raised the Letterboxd comparison — that comparable platforms default to private. I incorporated this into my response as an acknowledged tradeoff rather than changing my position.
+
+**Comment 5 (sort order):** I used Claude to think through the difference between how a watchlist and a collection are used, which helped me decide to agree with the reviewer's preference for date-added descending order.
 
 ## Comment 1 — Rename
 **What I did:** Rename save_to_watchlist()to add_to_watchlist in services/watchlist_services.pyand updated all call sites
